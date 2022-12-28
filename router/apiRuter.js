@@ -5,6 +5,11 @@ import { addPaciente } from "../controllers/addControllers.js";
 import { deletePaciente } from '../controllers/delControllers.js'
 import { putPaciente } from "../controllers/updateControllers.js";
 
+
+
+
+
+
 const router = Router()
 
 // read

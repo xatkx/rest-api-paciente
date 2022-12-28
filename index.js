@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 //import pacienteSchem from "./models/paciente.js"
 import router from "./router/apiRuter.js";
 import mongodb from './config/mongooseCRM.js'
+import cors from 'cors'
 
 // model setting
 
@@ -23,8 +24,11 @@ const port = process.env.PORT || 1010
 // app 
 const API = Express()
 
-// middle ware
 
+
+console.log('fff')
+// middle ware
+API.use(cors()) /// cors
 API.use( urlencoded({extended: true}))
 
 
